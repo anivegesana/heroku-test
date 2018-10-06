@@ -1,0 +1,12 @@
+{% extends "webapp/header.html" %}
+
+{% block title %}Hi{% endblock %}
+{% block content %}
+{% for subteam, memberDict in team.items %} 
+  <h1>{{subteam}}</h1>
+  {% for memberName, pict in memberDict.items %} 
+  <img src={{pict}}>
+  <p>{{memberName}}</p>
+  {% endfor %} 
+{% endfor %}
+{% endblock %}

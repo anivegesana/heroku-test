@@ -2,5 +2,20 @@
 
 {% block title %}Hi{% endblock %}
 {% block content %}
-<p>Hey</p>
+<h1>Time</h1>
+<hr>
+<p id="time"></p>
+<hr>
+<script>
+	// Every 1000ms
+	setInterval(function() {
+		// Change the time
+		document.getElementById("time").innerHTML = new Date().toLocaleTimeString();
+	}, 1000);
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTenrsIz29JczVkJEhuxYSfSs59oDhmlM&callback=initMap" type="text/javascript"></script>
+<h1>GEO API</h1>
+<text>Your ip address is {{ip}}<text>
+<text>You are in <strong>{{city}}</strong>, <strong>{{region_name}}</strong>, <strong>{{country_name}}</strong> - captial <strong>{{capital}}</strong><text><br>
+<text>The native language is <strong>{{language}}</strong></text>
 {% endblock %}

@@ -1,0 +1,19 @@
+{
+	"team": {
+		"Team 1": {
+			"Lionel Messi": "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/16080/production/_103704209_gettyimages-1045169184.jpg",
+			"Luis Suarez": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Luis_Su%C3%A1rez_2018.jpg",
+			"Gerard Pique": "https://pbs.twimg.com/profile_images/888436575788560385/AMdGBkgh_400x400.jpg"
+		},
+		"Team 2": {
+			"Person 1": "Picture",
+			"Person 2": "Picture",
+			"Person 3": "Picture"
+		},
+		"Team 3": {
+			"Person 1": "Picture",
+			"Person 2": "Picture",
+			"Person 3": "Picture"
+		}
+	}
+}

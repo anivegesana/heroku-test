@@ -12,8 +12,20 @@
 		// Change the time
 		document.getElementById("time").innerHTML = new Date().toLocaleTimeString();
 	}, 1000);
+	function initMap() {
+		var point = {lat: {{latitude}}, lng: {{longitude}}};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 13,
+			center: point
+		});
+		var marker = new google.maps.Marker({
+			position: point,
+			map: map
+		});
+	}
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTenrsIz29JczVkJEhuxYSfSs59oDhmlM&callback=initMap" type="text/javascript"></script>
+<div id="map"></div>
 <h1>GEO API</h1>
 <text>Your ip address is {{ip}}<text>
 <text>You are in <strong>{{city}}</strong>, <strong>{{region_name}}</strong>, <strong>{{country_name}}</strong> - captial <strong>{{capital}}</strong><text><br>
